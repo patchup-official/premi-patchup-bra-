@@ -1,0 +1,89 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+.titolo {
+  color: #f37021;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+form input, form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+form button {
+  background: #f37021;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.note-legali {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  color: #999;
+}
+
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.trophy {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.premio {
+  font-size: 1.5rem;
+  color: #f37021;
+  font-weight: bold;
+}
+
+.close-popup {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #f37021;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

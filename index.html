@@ -1,36 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Scopri il tuo premio</title>
+  <title>PatchUP Bra - Scopri il tuo premio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <img src="logo.svg" class="logo" alt="Logo PatchUP" />
-    <h1>SCOPRI IL TUO PREMIO</h1>
-    <form id="premioForm">
-      <input type="text" name="nome" placeholder="Nome e Cognome" required />
-      <input type="tel" name="telefono" placeholder="Telefono" required />
-      <input type="email" name="email" placeholder="Email" required />
-      
-<p class="note-legale">
-  I dati raccolti saranno utilizzati esclusivamente per finalità legate all’iniziativa promozionale.  
-  Il premio è assegnato a insindacabile giudizio dell’organizzazione e può essere ritirato <strong>solo presso il negozio PatchUP di Bra</strong>.  
-  Ogni partecipante può ricevere un solo premio. La partecipazione implica l’accettazione del regolamento disponibile in negozio.  
-  PatchUP si riserva il diritto di verificare i dati inseriti e rifiutare l’assegnazione in caso di irregolarità.
-</p>
-
-<button type="submit">SCOPRI IL TUO PREMIO</button>
+    <img src="logo.svg" alt="PatchUP Logo" class="logo" />
+    <h1 class="titolo">SCOPRI IL TUO PREMIO</h1>
+    <form id="prizeForm">
+      <input type="text" id="name" placeholder="Nome e Cognome" required />
+      <input type="tel" id="phone" placeholder="Telefono" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button type="submit">SCOPRI IL TUO PREMIO</button>
     </form>
-    <div id="popup" class="hidden">
-      <img src="1f3c6.svg" alt="Premio" class="coppa" />
-      <h2 id="testoPremio">HAI VINTO:</h2>
-      <div id="premioNome" class="premio-grande"></div>
+    <p class="note-legali">* Il premio è ritirabile solo presso il negozio PatchUP Bra – Via Principi di Piemonte 33, Bra. Un solo premio per persona. Fino ad esaurimento scorte.</p>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <img src="1f3c6.svg" alt="Premio" class="trophy" />
+      <h2>HAI VINTO:</h2>
+      <p id="premio" class="premio">PREMIO</p>
+      <button class="close-popup">CHIUDI</button>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
