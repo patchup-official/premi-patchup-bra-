@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scopri il tuo premio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="logo.svg" class="logo" alt="Logo PatchUP" />
+    <h1>SCOPRI IL TUO PREMIO</h1>
+    <form id="premioForm">
+      <input type="text" name="nome" placeholder="Nome e Cognome" required />
+      <input type="tel" name="telefono" placeholder="Telefono" required />
+      <input type="email" name="email" placeholder="Email" required />
+      
+<p class="note-legale">
+  I dati raccolti saranno utilizzati esclusivamente per finalità legate all’iniziativa promozionale.  
+  Il premio è assegnato a insindacabile giudizio dell’organizzazione e può essere ritirato <strong>solo presso il negozio PatchUP di Bra</strong>.  
+  Ogni partecipante può ricevere un solo premio. La partecipazione implica l’accettazione del regolamento disponibile in negozio.  
+  PatchUP si riserva il diritto di verificare i dati inseriti e rifiutare l’assegnazione in caso di irregolarità.
+</p>
+
+<button type="submit">SCOPRI IL TUO PREMIO</button>
+    </form>
+    <div id="popup" class="hidden">
+      <img src="1f3c6.svg" alt="Premio" class="coppa" />
+      <h2 id="testoPremio">HAI VINTO:</h2>
+      <div id="premioNome" class="premio-grande"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
